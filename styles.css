@@ -4,6 +4,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.neon {
+    background-color: rgb(4, 34, 59);
+    color: rgb(255, 255, 255);
+}
+
+body.blurple {
+    background-color: blueviolet;
+    color: black;
+}
+
 h1 {
     text-align: center;
 }
@@ -33,6 +48,7 @@ h1 {
     align-items: center;
     background-color: grey;
     font-size: 13px;
+    text-align: center;
 }
 
 #tab:hover {
@@ -60,7 +76,7 @@ h1 {
 }
 
 .row {
-    height: 64px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +85,7 @@ h1 {
 
 #name {
     width: 100px;
-    height: 64px;
+    height: 70px;
     background-color: grey;
     display: flex;
     justify-content: center;
@@ -81,7 +97,7 @@ h1 {
 
 #full-form {
     width: 150px;
-    height: 64px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +108,7 @@ h1 {
 
 #desc {
     width: 430px;
-    height: 64px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,4 +120,83 @@ h1 {
 
 #excel-img {
     width: 400px;
+}
+
+.Themes,
+.Fonts,
+.client-adjustable-styles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#t-t,
+#f-t,
+#cas-t {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Theme-picker,
+.Font-picker {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.ch-color,
+.ch-font {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+#Dark {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: none;
+}
+
+#Light {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+#Neon {
+    background-color: rgb(11, 90, 90);
+    color: black;
+    border: 1px solid rgb(83, 229, 255);
+}
+
+#Blurple {
+    background-color: blueviolet;
+    color: black;
+    border: none;
+}
+
+#Arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Trebuchet {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#Monospace {
+    font-family: monospace;
+}
+
+#Note {
+    width: 700px;
+    color: red;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -350px;
 }

@@ -8,10 +8,31 @@
 <body>
     <h1> IT Challenge - pripremanja </h1>
     <div class="tabs">
-        <div class="tab-btn" id="tab"> Ekstenzije </div>
-        <div class="tab-btn" id="tab"> Kombinacije tipki </div>
-        <div class="tab-btn" id="tab"> Izumitelji Programskih jezika </div>
-        <div class="tab-btn" id="tab"> Protokoli </div>
+        <fieldset>
+            <legend> 3 star
+                <div class="tab-btn" id="tab"> Ekstenzije </div>    
+            </legend>
+        </fieldset> 
+        <fieldset>
+            <legend> 2 star
+                <div class="tab-btn" id="tab"> Kombinacije tipki </div>    
+            </legend>
+        </fieldset>
+        <fieldset>
+            <legend> 2 star
+                <div class="tab-btn" id="tab"> Izumitelji Programskih jezika </div>
+            </legend>
+        </fieldset>
+        <fieldset>
+            <legend> 4 star 
+                <div class="tab-btn" id="tab"> Protokoli </div>
+            </legend>
+        </fieldset>
+        <fieldset>
+            <legend> Neutral
+                <div class="tab-btn" id="tab"> Options </div>
+            </legend>
+        </fieldset>
     </div>
     <div class="content">
         <div id="E-t"> Ekstenzije - trenutno: 56 </div>
@@ -339,6 +360,27 @@
         <br> 5060 - SIP
         <br> 5061 - SIP over TLS 
     </div>
+    <div class="content">
+        <div class="Themes">
+            <div id="t-t"> [Themes] </div>
+            <div class="Theme-picker">
+                <button class="ch-color" id="Dark" onclick="Dark()"> Dark </button>
+                <button class="ch-color" id="Light" onclick="Light()"> Light </button>
+                <button class="ch-color" id="Neon" onclick="Neon()"> Neon </button>
+                <button class="ch-color" id="Blurple" onclick="Blurple()"> Blurple </button>
+            </div>
+        </div>
+        <div class="Fonts">
+            <div id="f-t"> [Fonts] </div>
+            <div class="Font-picker">
+                <button class="ch-font" id="Arial" onclick="Arial()"> Arial </button>
+                <button class="ch-font" id="Trebuchet" onclick="Trebuchet()"> Trebuchet MS </button>
+                <button class="ch-font" id="Monospace" onclick="Monospace()"> Monospace </button>
+            </div>
+        </div>
+    </div>
+    <div id="Note"> Note: tabovi su označeni sa stars ili zvijezdicama od raspona po bitnošću, po mom mišljenju. </div>
 </body>
 <script src="tabs.js"></script>
+<script src="main.js"></script>
 </html>
